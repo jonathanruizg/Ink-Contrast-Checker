@@ -1,0 +1,7 @@
+{
+  "name": "Ink Contrast Checker",
+  "id": "961431818895728875",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html"
+}

@@ -1,0 +1,169 @@
+ 
+  <!-- Start CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+    p, h4, h3, h2, h5 {
+      font-family: Helvetica, Arial, sans-serif;
+      color: rgb(25, 24, 35, 0.9);
+    }
+  
+    .FAIL {
+      color: #de2d59;
+    }
+  
+    .AA {
+      color: #08884b;
+    }
+  
+    .AAA {
+      color: #08884b;
+    }
+  
+    #container {
+      width: 100vw;
+      height: 100vh;
+      background-color: #F7F6F7;
+      display: grid;
+      row-gap: 16px;
+      padding: 16px;
+      justify-items: center;
+      align-content: start;
+    }
+  
+    #background-container {
+      display: grid;
+      width: 100%;
+      row-gap: 8px;
+      padding: 24px;
+      border-radius: 8px;
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .border {
+      border-color: rgb(25, 24, 35, 0.15);
+      border-style: solid;
+      border-width: 1px;
+    }
+  
+    #colorGrid {
+      width: 100%;
+      padding: 8px;
+      display: grid;
+      column-gap: 8px;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      justify-self: center;
+    }
+  
+    .colorBox {
+      height: 16px;
+      width: 16px;
+      border-radius: 4px;
+    }
+  
+    .color {
+      display: grid;
+      column-gap: 8px;
+      grid-template-columns: auto auto;
+      font-size: 14px;
+      align-items: center;
+    }
+  
+    #swap {
+      cursor: pointer;
+      justify-self: center;
+    }
+  
+    #swap:hover {
+      stroke: rgb(25, 24, 35, 0.9);
+    }
+  </style>
+
+ <!-- End CSS-->
+
+ <!-- Start HTML -->
+  <div id="container">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 200 200" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M200 100C200 155.228 155.228 200 100 200C44.7715 200 0 155.228 0 100C0 44.7715 44.7715 0 100 0C155.228 0 200 44.7715 200 100ZM145.545 164.22C145.661 164.226 145.782 164.226 145.897 164.226C152.361 164.226 156.602 161.277 159.032 158.766C161.929 155.788 163.81 151.783 164.07 148.055L157.324 147.588C157.208 149.273 156.32 151.853 154.184 154.051C152.638 155.638 149.896 157.514 145.655 157.45C142.348 157.399 139.082 155.142 137.143 151.564C135.417 148.39 135.163 144.991 136.392 142.232C150.381 137.771 157.22 128.249 160.509 120.926C164.024 113.1 164.272 106.198 164.289 105.448C164.341 104.115 164.843 84.9493 152.378 67.1688C152.747 66.2109 153.094 64.9989 153.232 63.6081C153.544 60.5149 152.886 55.9558 148.004 51.8006C147.911 51.7256 147.819 51.6564 147.721 51.5871C143.017 48.3669 138.383 49.1287 135.734 50.0405C130.656 46.324 114.641 36.1035 91.7305 35.7746H91.6728C91.1534 35.7746 78.8207 35.8727 65.8071 40.5876C48.0209 47.0338 37.6792 58.9855 35.896 75.1559C35.8267 75.7446 35.2035 81.279 36.6116 88.2907C38.568 98.0149 43.5137 106.042 50.9295 111.502C58.9858 117.434 67.4749 120.435 76.1891 120.435C76.8009 120.435 77.4184 120.418 78.0301 120.389C86.7847 119.968 95.2623 116.574 103.232 110.296C103.59 110.319 104.23 110.555 104.525 110.965C104.842 111.404 104.554 112.177 104.259 112.742C103.734 113.747 101.224 116.892 96.7916 120.233C93.1674 122.969 87.2579 126.576 79.6806 128.249C66.8747 131.083 53.8669 127.522 41.0322 117.677L36.9175 123.044C44.6275 128.959 52.58 132.889 60.5613 134.724C67.4403 136.306 74.3597 136.352 81.1407 134.851C97.7035 131.192 108.276 119.662 110.255 115.876C112.258 112.033 111.658 108.091 108.686 105.581C105.91 103.238 101.824 102.857 99.3828 104.715C99.3713 104.724 99.3612 104.732 99.3511 104.741C99.341 104.75 99.3309 104.758 99.3193 104.767C85.0476 116.165 69.2813 116.621 54.9403 106.06C48.875 101.593 44.9565 95.239 43.2886 87.1769C42.0017 80.9789 42.6019 76.0389 42.6077 75.9985C42.6077 75.9869 42.6091 75.9754 42.6105 75.9639C42.612 75.9523 42.6134 75.9408 42.6134 75.9292C44.1024 62.3385 52.6261 52.6086 67.9482 47.0107C79.6171 42.7459 91.0783 42.5497 91.667 42.5439C104.634 42.7402 115.172 46.5086 121.734 49.6423C128.907 53.0645 133.034 56.4982 133.068 56.5271C134.205 57.4851 135.757 57.6351 137.004 56.8387C137.443 56.5906 140.536 54.9805 143.762 57.0811C145.753 58.824 146.653 60.6765 146.52 62.7367C146.417 64.318 145.724 65.5126 145.632 65.6684C144.801 66.863 144.876 68.3981 145.753 69.5638C158.133 86.0245 157.539 104.978 157.532 105.211L157.531 105.211V105.304C157.531 105.361 157.381 111.525 154.242 118.392C151.614 124.136 147.761 128.65 142.731 131.896C145.648 126.433 147.78 120.55 149.094 114.329L142.474 112.933C140.853 120.62 137.846 127.724 133.529 134.049C130.061 139.133 125.739 143.738 120.689 147.743C112.956 153.866 105.817 156.717 104.282 157.289C103.889 157.306 103.284 157.231 103.012 156.486C102.666 155.534 103.284 154.796 103.647 154.461C120.343 145.597 131.498 126.46 132.814 118.611C133.518 114.41 131.533 110.67 127.88 109.308C124.053 107.883 119.835 109.435 117.613 113.083C117.584 113.129 117.555 113.181 117.526 113.233C111.19 124.954 103.434 131.319 98.0435 134.597C92.2657 138.11 87.8802 138.935 87.7508 138.959L87.748 138.96C87.4998 139 87.2632 139.07 87.0324 139.162C77.5275 142.988 66.9204 143.23 55.5112 139.872C46.82 137.315 40.9221 133.524 40.8643 133.483L37.1709 139.15C37.4364 139.323 43.8076 143.45 53.3874 146.301C66.0663 150.075 78.4567 149.821 89.2485 145.562C92.2667 144.939 110.549 140.281 123.419 116.545C124.019 115.616 124.919 115.432 125.513 115.651C126.096 115.87 126.304 116.493 126.137 117.503C125.767 119.708 123.465 125.404 118.623 132.064C114.895 137.194 108.668 144.229 100.196 148.644C100.046 148.724 99.9017 148.811 99.769 148.909C97.928 150.248 94.904 154.045 96.6584 158.829C98.1877 162.99 101.806 164.058 104.311 164.058C104.807 164.058 105.263 164.018 105.661 163.931C105.823 163.902 105.984 163.862 106.14 163.81C106.504 163.689 115.097 160.751 124.682 153.214C126.254 151.979 127.762 150.691 129.205 149.351C129.573 151.189 130.238 153.024 131.198 154.796C134.303 160.515 139.797 164.128 145.545 164.22ZM123.909 81.9539C126.523 81.9539 128.641 79.8352 128.641 77.2216C128.641 74.6081 126.523 72.4894 123.909 72.4894C121.295 72.4894 119.177 74.6081 119.177 77.2216C119.177 79.8352 121.295 81.9539 123.909 81.9539Z" fill="#191823"/>
+    </svg>
+      
+    <div id="background-container" class="border background-color">
+      <h3 class="foreground-color">Checking contrast of large text</h3>
+      <h5 class="foreground-color largeText">Checking contrast of small text</h5>
+    </div>
+    <div id="colorGrid">
+      <div class="color">
+        <div class="colorBox shadow background-color"></div>
+        <p id="bgValue">000000</p>
+      </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="swap" stroke="#636363" viewBox="0 0 24 24" fill="none" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.85846 4.00069L11.5255 -0.000305176H13.8085L11.8077 3.00234C11.8717 3.00079 11.936 2.99999 12.0004 2.99999C16.9704 2.99999 21.0004 7.02899 21.0004 12C21.0004 13.439 20.6534 14.794 20.0534 16H17.8614C18.6414 14.86 19.0994 13.483 19.0994 12C19.0994 8.085 15.9154 4.89999 12.0004 4.89999C11.915 4.89999 11.8302 4.90201 11.7458 4.90577L13.8085 7.99969H11.5255L8.85846 4.00069ZM12.1933 20.9976C12.129 20.9992 12.0645 21 11.9998 21C7.02976 21 2.99976 16.971 2.99976 12C2.99976 10.561 3.34576 9.206 3.94676 8H6.13876C5.35876 9.14 4.90076 10.517 4.90076 12C4.90076 15.915 8.08476 19.1 11.9998 19.1C12.0852 19.1 12.1701 19.098 12.2545 19.0942L10.1915 16H12.4745L15.1415 20L12.4745 24H10.1915L12.1933 20.9976Z" fill="#191823" fill-opacity="0.6"/>
+      </svg> -->
+      <svg height="24" width="24" id="swap" stroke="#636363" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 1l4 4-4 4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 11V9c0-1.06087.42143-2.07828 1.17157-2.82843C4.92172 5.42143 5.93913 5 7 5h14M7 23l-4-4 4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 13v2c0 1.0609-.4214 2.0783-1.1716 2.8284C19.0783 18.5786 18.0609 19 17 19H3" />
+      </svg>
+      <div class="color">
+        <div class="colorBox shadow foreground-color"></div>
+        <p id="fgValue">ffffff</p>
+      </div>
+    </div>
+    <h2 id="contrast"> 21:1</h2>
+    <h3 >Normal text: <span id="normalTextScore"></span> </h3>
+    <h4 >large text: <span id="largeTextScore" ></span> </h4>
+
+<!-- End HTML -->
+
+<!-- Start JS -->
+ <script>
+  function updateScores(id, score) {
+    const element = document.getElementById(id)
+    element.className = score
+    element.textContent = score
+    return element
+  }
+  
+  function changeText(id, text) {
+    const element = document.getElementById(id)
+    element.textContent = text
+    return element
+  }
+  
+  function changeColor(classname, color) {
+    const elements = document.getElementsByClassName(classname)
+    for (let i = 0; i < elements.length; i++) {
+      if (elements[i].localName === 'div') {
+        elements[i].style = `background-color: ${color};`
+      } else {
+        elements[i].style = `color: ${color};`
+      }
+    }
+  }
+  
+  window.onmessage = async event => {
+    const message = event.data.pluginMessage
+    if (message.type === 'selectionChange') {
+      changeColor('background-color', message.background)
+      changeColor('foreground-color', message.foreground)
+      changeText('contrast', message.contrast)
+      changeText('fgValue', message.foreground)
+      changeText('bgValue', message.background)
+      updateScores('normalTextScore', message.scores.normalText)
+      updateScores('largeTextScore', message.scores.largeText)
+    }
+  }
+  document.getElementById('swap').onclick = () => {
+    parent.postMessage({ pluginMessage: { type: 'swap' } }, '*') //send messages between the UI and the plugin code
+  }
+  </script>
+<!-- End JS -->
